@@ -1,0 +1,13 @@
+<div class="upload-zone" [class.dragover]="isDragOver()" (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" (click)="onClick()" (keyup.enter)="onClick()"
+    [attr.aria-disabled]="disabled ? true : null" role="button" tabindex="0">
+    <input #fileInput type="file" class="hidden-input" [disabled]="disabled" accept=".txt"
+        (change)="onFileSelected($event)" />
+    <p class="headline"><span class="accent">{{ texts.uploadZone.headlinePrefix }}</span> {{
+        texts.uploadZone.headlineSuffix }}</p>
+    <p class="hint">{{ texts.uploadZone.hint }}</p>
+
+    <div class="selected" *ngIf="fileName">
+        {{ texts.uploadZone.selectedPrefix }} {{ fileName }}
+    </div>
+</div>

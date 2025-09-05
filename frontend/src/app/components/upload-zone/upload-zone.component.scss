@@ -1,0 +1,21 @@
+.upload-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease;
+  background: #fff;
+}
+.upload-zone.dragover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+.hidden-input { display: none; }
+.icon { font-size: 2rem; color: #9ca3af; }
+.headline { margin: .5rem 0 0; color: #475569; }
+.headline .accent { color: #2563eb; font-weight: 600; }
+.hint { margin: .25rem 0 0; color: #94a3b8; font-size: .85rem; }
+.selected { margin-top: .75rem; color: #16a34a; background: #f0fdf4; border-radius: .5rem; padding: .5rem .75rem; font-weight: 600; font-size: .9rem; }
+[aria-disabled="true"] { opacity: .5; cursor: not-allowed; }
+

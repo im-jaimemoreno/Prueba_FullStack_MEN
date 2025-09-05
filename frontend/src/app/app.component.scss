@@ -1,0 +1,11 @@
+.page { background: #f3f4f6; min-height: 100vh; padding: 1rem; display:flex; align-items:center; justify-content:center; }
+.card { width: 100%; max-width: 960px; background: #fff; border-radius: 5px; padding: 2rem; display:flex; flex-direction:column; gap: 1.25rem; }
+.center { text-align: center; }
+.title { margin: 0; font-size: 2rem; color: #2563eb; }
+.subtitle { color:#6b7280; margin: .5rem 0 0; }
+.actions { text-align: center; }
+.primary { background:#2563eb; color:#fff; border:none; padding:.75rem 1.5rem; border-radius:.75rem; font-weight:700; cursor:pointer; box-shadow: 0 1px 2px rgba(0,0,0,.1); }
+.primary:hover { background:#1d4ed8; }
+.primary[disabled] { opacity:.6; cursor:not-allowed; }
+.spinner-wrap { display:inline-flex; align-items:center; gap:.5rem; }
+.error { background:#fee2e2; border:1px solid #fca5a5; color:#b91c1c; border-radius:.75rem; padding:.75rem 1rem; }

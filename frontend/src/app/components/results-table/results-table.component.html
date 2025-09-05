@@ -1,0 +1,24 @@
+<div class="header" *ngIf="results?.length">
+  <h2>{{ texts.results.title }}</h2>
+  <button class="download" (click)="downloadResultsAsJson()">
+    {{ texts.results.download }}
+  </button>
+</div>
+<div class="table-wrapper" *ngIf="results?.length">
+  <table class="results">
+    <thead>
+      <tr>
+        <th>{{ texts.results.columns.hora }}</th>
+        <th>{{ texts.results.columns.minutos }}</th>
+        <th>{{ texts.results.columns.resultado }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of results; index as i">
+        <td>{{ item.hora }}</td>
+        <td>{{ item.minutos }}</td>
+        <td>{{ item.resultado }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

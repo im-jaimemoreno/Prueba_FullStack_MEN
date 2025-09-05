@@ -1,0 +1,36 @@
+<div class="page">
+  <div class="card">
+    <header class="center">
+      <h1 class="title">{{ texts.header.title }}</h1>
+      <p class="subtitle">{{ texts.header.subtitle }}</p>
+    </header>
+
+    <app-file-description />
+
+    <app-upload-zone
+      [disabled]="loading()"
+      [fileName]="selectedFile()?.name ?? null"
+      (fileSelected)="handleFile($event)"
+    />
+
+    <div class="actions">
+      <button class="primary" (click)="processFile()" [disabled]="!selectedFile() || loading()">
+        <ng-container *ngIf="loading(); else idle">
+          <span class="spinner-wrap">
+            <mat-spinner diameter="20"></mat-spinner>
+            <span>{{ texts.actions.processing }}</span>
+          </span>
+        </ng-container>
+        <ng-template #idle>{{ texts.actions.process }}</ng-template>
+      </button>
+    </div>
+
+    <app-results-table [results]="results()"></app-results-table>
+
+    <div class="error" *ngIf="error()">
+      <strong>Error:</strong> {{ error() }}
+    </div>
+
+    <!-- <app-footer /> -->
+  </div>
+</div>

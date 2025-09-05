@@ -1,0 +1,12 @@
+<section class="desc">
+  <h2 class="title">{{ texts.fileDescription.title }}</h2>
+  <p class="intro">{{ texts.fileDescription.intro }}</p>
+
+  <h3 class="subtitle">{{ texts.fileDescription.exampleTitle }}</h3>
+  <pre class="example">{{ texts.fileDescription.exampleContent }}</pre>
+
+  <h3 class="subtitle">{{ texts.fileDescription.notesTitle }}</h3>
+  <ul class="notes">
+    <li *ngFor="let n of texts.fileDescription.notes">{{ n }}</li>
+  </ul>
+</section>
