@@ -64,7 +64,7 @@ Archivo de ejemplo (`sample-data/test.txt`):
 
 ## Estructura del repositorio
 ```
-prueba-minambiente-jaime-moreno/
+prueba-secretaria-educacion-jaime-moreno/
 ├─ backend-app/        # Spring Boot (Java 17)
 ├─ frontend-app/       # Angular 19 (standalone components)
 └─ sample-data/        # Archivos de prueba .txt
