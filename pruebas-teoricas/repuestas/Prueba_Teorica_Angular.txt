@@ -1,0 +1,22 @@
+PRUEBA TEÓRICA FRONT ANGULAR - Respuestas
+
+1. Angular es un framework frontend basado en TypeScript.
+2. Verdadero.
+3. Falso (AngularJS y Angular son distintos).
+4. Node.js + Angular CLI.
+5. *ngIf().
+6. Decorador: función que añade metadatos. Ej: @Component({...}).
+7. ng generate service nombre-servicio (ng g s).
+8. two-way binding.
+9. One way binding.
+10. @Input: recibe datos desde componente padre.
+11. src.
+12. ng serve.
+13. ng g c mi-componente.
+14. Falso.
+15. Falso.
+16. Constructor.
+17. Inyectando servicio en constructor y llamando this.servicio.metodo().
+18. Lista.push(objeto).
+19. Ionic es framework para apps móviles híbridas.
+20. Ionic usa Angular para interfaces.

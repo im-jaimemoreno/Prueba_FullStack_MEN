@@ -1,0 +1,32 @@
+PRUEBA TEÓRICA JAVA - Respuestas
+
+1. Lenguaje multiplataforma.
+2. Herencia múltiple (no existe en Java).
+3. No se instancian variables estáticas, se accede por Clase.variable.
+4. Se inicializan al cargar la clase.
+5. Subinterfaces de Collection.
+6. iterator() es de Iterable.
+7. Falso (Map no es Collection).
+8. Métodos de Iterator.
+9. False (List es interfaz).
+10. Subclases de AbstractCollection.
+11. Nested Interface.
+12. Clase Collections.
+13. groupId, artifactId, version, packaging, dependencies.
+14. Ejemplo dependency en pom.xml.
+15. Se usa con ${spring.version}.
+16. mvn archetype:generate ... -DarchetypeArtifactId=maven-archetype-webapp.
+17. Contenedor.
+18. target/.
+19. ~/.m2/repository.
+20. git status.
+21. git remote -v.
+22. Crea y cambia a nueva rama.
+23. Nombre de la rama.
+24. Orden: git add ., git commit, git pull, git push.
+25. Endpoint REST GET JSON en /api/parametros/tipoDocumento.
+26. @RequestParam.
+27. /api/servicio/recurso/1.
+28. Validar/uno/dos/tres.
+29. Fachada.
+30. @Autowired.
